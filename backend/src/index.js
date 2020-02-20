@@ -8,16 +8,16 @@ import routes from './routes/movie';
 //initializing app
 const app = express();
 
-//connection to DB
+//call connection to DB
 dbConnection();
-
-//initializeing routes
-app.use('/movies', routes );
 
 //Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//initializeing routes
+app.use('/movies', routes );
 
 //listening on server port
 app.listen(process.env.PORT || 4000, () => console.log("Server Online!"));
