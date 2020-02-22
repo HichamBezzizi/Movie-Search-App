@@ -49,6 +49,23 @@ router.get("/:movieId", async (req, res) => {
   }
 });
 
+//get random movie
+router.get("/randomMovie/:", async (req, res) => {
+  try {
+    const randomMovie = await Movie.find().then(movies => {
+      const random = Math.floor(Math.random() * movies.length);
+      res.json(movies[random]);
+    });
+    res.json(randomMovie);
+    console.log("Got a random movie!");
+  } catch (err) {
+    res.json({
+      message: err
+    });
+  }
+});
+
+
 //delete a movie
 router.delete("/:movieId", async (req, res) => {
   try {
@@ -81,7 +98,7 @@ router.put("/:movieId", async (req, res) => {
       }
     );
     res.json(updateMovie);
-    console.log('Movie updated with id: ', req.params.movieId);
+    console.log("Movie updated with id: ", req.params.movieId);
   } catch (err) {
     res.json({
       message: err
