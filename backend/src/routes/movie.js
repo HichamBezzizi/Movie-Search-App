@@ -50,19 +50,19 @@ router.get("/:movieId", async (req, res) => {
 });
 
 //get random movie
-router.get("/randomMovie/:", async (req, res) => {
-  try {
-    const randomMovie = await Movie.find().then(movies => {
-      const random = Math.floor(Math.random() * movies.length);
-      res.json(movies[random]);
-    });
-    res.json(randomMovie);
-    console.log("Got a random movie!");
-  } catch (err) {
-    res.json({
-      message: err
-    });
-  }
+router.get("/randomMovie/:random", async (req, res) => {
+  // try {
+  //   const randomMovie = await Movie.find().then(movies => {
+  //     const random = Math.floor(Math.random() * movies.length);
+  //     return movies[random];
+  //   });
+  //   res.json(randomMovie);
+  //   console.log("Got a random movie!");
+  // } catch (err) {
+  //   res.json({
+  //     message: err
+  //   });
+  // }
 });
 
 
