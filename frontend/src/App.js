@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Hello from "./components/HelloWorld/HelloWorld";
+// import Hello from "./components/HelloWorld/HelloWorld";
 
 const App = () => {
   return (
-    <div>
-      <Hello />
+    <div className="container">
+    <h1 className="header">Music Search App</h1>
     </div>
   );
 };
