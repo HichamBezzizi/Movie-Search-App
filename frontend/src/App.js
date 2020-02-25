@@ -4,16 +4,16 @@ import "./App.css";
 import MovieCard from "./components/MovieCard/MovieCard";
 
 const App = () => {
-  //hooks
+  //Hooks
   const [moviesList, setMoviesList] = useState([]);
 
-    useEffect(() => {     // Will run after first render
+  useEffect(() => {    //Will run after first render
     const fetchData = async () => {
       const response = await axios.get("http://localhost:4000/movies");
-      setMoviesList(response.data);  // will set movies and trigger a new render
-    }
+      setMoviesList(response.data);   //Will set movies and trigger a new render
+    };
     fetchData();
-  },[]);
+  }, []);
 
   return (
     <div className="container">
