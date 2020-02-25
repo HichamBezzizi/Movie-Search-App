@@ -1,23 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import "./MovieCard.css";
 
-const MovieCard = () => {
-  const [movies, setMovies] = useState({movies: []});
-  // const [card, showCard] = useState(false);
+const MovieCard = ({movies}) => {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await axios("http://localhost:4000/movies");
-      setMovies(data);
-    }
-    fetchData();
-  },[]);
+  console.log(movies);
 
   return (
     <div>
-      <h1 className="title">Hello</h1>
-      <code>{console.log(movies.data)}</code>
     </div>
   );
 };
