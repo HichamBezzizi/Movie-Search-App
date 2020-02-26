@@ -7,7 +7,7 @@ A project I recently started that combines my knowledge of Javascript and React 
 ## Mission
 
 - Practice React with Hooks.
-- Use my own API to display the data from my 
+- Use my own API to display the data from my database
 - Design the frontend.
 - Connecting backend with frontend thus making a fullstack web app.
 - Utilizing all the CRUD operations that my backend offers in my frontend.
