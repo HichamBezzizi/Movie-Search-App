@@ -21,6 +21,6 @@ A project I recently started that combines my knowledge of Javascript and React 
 
 ## How will it work
 
-You will be able to search for any movie that's in the database based on a couple of searchparameters(id, title, genre, etc). You will also be able to add, edit and delete movies.
+You will be able to search for any movie that's in the database based on a couple of search parameters(id, title, genre, etc). You will also be able to add, edit and delete movies.
 
 
