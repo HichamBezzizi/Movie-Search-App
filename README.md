@@ -1,9 +1,5 @@
 # Movies Search App - Work In Progress
 
-
-
-![Starting screen](./src/img/ytreactapp.png)
-
 [Temporary design of the app can be viewed here.](https://www.figma.com/file/t0z3q3RfIh8dlv2FIDMQCW/Movies-Search-App?node-id=0%3A1)
 
 A project I recently started that combines my knowledge of Javascript and React and connecting it with a backend technology and database that I am familiar with, NodeJs and MongoDB.
