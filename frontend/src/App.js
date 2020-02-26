@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import MovieCard from "./components/MovieCard/MovieCard";
+import MovieList from "./components/MovieList/MovieList";
 
 const App = () => {
   //Hooks
@@ -18,7 +18,8 @@ const App = () => {
   return (
     <div className="container">
       <h1 className="header">Movies Search App</h1>
-      <MovieCard movies={moviesList} />
+      <MovieList movie={moviesList} />
+
     </div>
   );
 };
