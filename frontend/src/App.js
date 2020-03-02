@@ -16,10 +16,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <h1 className="header">Movies Search App</h1>
       <MovieList movie={moviesList} />
-
     </div>
   );
 };
