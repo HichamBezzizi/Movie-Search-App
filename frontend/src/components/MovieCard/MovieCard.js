@@ -6,7 +6,7 @@ const MovieCard = ({ movie }) => {
   
   return (
     <div className= 'container'>
-      <div className="card">
+      <div className="content">
         <h2>{movie.title}</h2>
         <ul>
           <li> Genre: {movie.genre}</li>
