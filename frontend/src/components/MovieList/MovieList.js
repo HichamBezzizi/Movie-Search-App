@@ -9,7 +9,8 @@ const MovieList = movies => {
     <MovieCard key={id} movie={movie} />
   ));
 
-  return <div>{listOfMovies}</div>;
+  return <div className='list-container'>{listOfMovies}</div>;
+
 };
 
 export default MovieList;

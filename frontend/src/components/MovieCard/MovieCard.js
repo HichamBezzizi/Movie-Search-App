@@ -5,7 +5,7 @@ const MovieCard = ({ movie }) => {
   //   console.log(movie);
   
   return (
-    <div className="container">
+    <div className= 'container'>
       <div className="card">
         <h2>{movie.title}</h2>
         <ul>

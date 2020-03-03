@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="header">Movies Search App</h1>
+      <h1 className='header'>Movies Search App</h1>
       <MovieList movie={moviesList} />
     </div>
   );
