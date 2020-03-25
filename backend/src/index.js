@@ -16,8 +16,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//initializeing routes
-app.use('/movies', routes );
+//initializing routes
+app.use('/movies', routes)
 
 //listening on server port
-app.listen(process.env.PORT || 4000, () => console.log("Server Online!"));
+app.listen(4001, () => console.log("Listening to port"));
+
+
+

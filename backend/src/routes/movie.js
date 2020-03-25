@@ -4,10 +4,10 @@ import { Movie } from "../models/movieModel";
 
 //get all movies
 router.get("/", async (req, res) => {
+
   try {
     const movies = await Movie.find();
     res.json(movies);
-    console.log(movies);
     console.log("Get all movies!");
   } catch (err) {
     res.json({
@@ -49,8 +49,9 @@ router.get("/:movieId", async (req, res) => {
   }
 });
 
+
 //get random movie
-router.get("/randomMovie/:random", async (req, res) => {
+// router.get("/randomMovie/:random", async (req, res) => {
   // try {
   //   const randomMovie = await Movie.find().then(movies => {
   //     const random = Math.floor(Math.random() * movies.length);
@@ -63,13 +64,14 @@ router.get("/randomMovie/:random", async (req, res) => {
   //     message: err
   //   });
   // }
-});
+// });
 
 
 //delete a movie
 router.delete("/:movieId", async (req, res) => {
   try {
-    const removeMovie = await Movie.remove({
+    const removeMovie = await Movie.deleteOne({
+
       _id: req.params.movieId
     });
     res.json(removeMovie);
@@ -105,5 +107,17 @@ router.put("/:movieId", async (req, res) => {
     });
   }
 });
+
+// router.use(function(req, res, next) {
+//     console.log('request', req.url, req.body, req.method);
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-token");
+//     if(req.method === 'OPTIONS') {
+//         res.end();
+//     }
+//     else {
+//         next();
+//     }
+// });
 
 export default router;

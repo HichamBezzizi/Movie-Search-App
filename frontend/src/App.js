@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from 'axios';
 import "./App.css";
 import MovieList from "./components/MovieList/MovieList";
 
@@ -9,11 +9,12 @@ const App = () => {
 
   useEffect(() => {    //Will run after first render
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:4000/movies");
+      const response = await axios.get("http://localhost:4001/movies");
       setMoviesList(response.data);   //Will set movies and trigger a new render
     };
     fetchData();
   }, []);
+
 
   return (
     <div>
