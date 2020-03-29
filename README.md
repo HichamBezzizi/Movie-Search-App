@@ -17,7 +17,8 @@ A project I recently started that combines my knowledge of Javascript and React 
 - HTML/CSS/JS
 - React(Hooks)
 - Nodejs
-- MongoDB o
+- MongoDB op
+
 
 
 ## How will it work
